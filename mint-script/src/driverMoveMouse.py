@@ -3,10 +3,10 @@ import pyautogui, keyboard, time
 class DriverMoveMouse():
 
     def __init__(self):
-        self.counter = 0
+        self.counter = 15
         self.record_number = 0
         self.collection_name = "Ratoncito Perez"
-        self.collection_description = "aldfkjas"
+        self.collection_description = "El Ratoncito Perez es un personaje fantástico que se encarga de recoger los dientes que se les caen a los niños y que colocan bajo la almohada. Mientras los niños duermen, el ratón lo cambia por dulces, monedas u otros regalos"
         pyautogui.PAUSE = 0.5
 
     def move(self,x,y):
@@ -48,22 +48,25 @@ class DriverMoveMouse():
 
     def clickUploadImageButton(self):
         self.clickCertainPosition(2399,1014)
-    
+
+    def selectImage(self):
+        for a in range(self.counter):
+            pyautogui.press('down')
+
+
     def clickNameButton(self):
         self.clickCertainPosition(2440,1186)
-    
+
     def pressEnter(self):
         pyautogui.keyDown("enter")
         pyautogui.keyUp("enter")
-
-    
 
     def writeWithKeyboard(self, msg):
         pyautogui.typewrite(msg + "\n")
 
     def writeName(self):
         self.counter = self.counter + 1
-        self.writeWithKeyboard(self.collection_name + " #" str(self.counter))
+        self.writeWithKeyboard(self.collection_name + " #" + str(self.counter))
 
     def writePrice(self):
         self.writeWithKeyboard("0.002")
@@ -101,6 +104,7 @@ class DriverMoveMouse():
         pyautogui.hotkey('ctrl', 'v')
 
         
+    
 
     def clickListNFT(self):
         self.clickCertainPosition(2137,1255)
@@ -113,37 +117,40 @@ class DriverMoveMouse():
         time.sleep(1)
         self.clickCertainPosition(2851,781)
 
+        print(' -- NFT {name} #{number} MINTED AND CREATED -- )'.format(name=self.collection_name, number = self.counter))
 
 
 
 
 
 
-        
 
 
 # Test case purposes
 if __name__ == "__main__":
     # Record mouse position
     driver = DriverMoveMouse()
-    driver.clickCreateButton()
-    driver.clickUploadImageButton()
-    driver.pressEnter()
-    driver.clickNameButton()
-    driver.writeName()
-    driver.scrollDown(10)
-    driver.clickDescriptionButton()
-    driver.writeDescription()
-    driver.clickCollectionButton()
-    driver.clickSelectCollection()
-    driver.scrollDown(30)
-    driver.selectPolygonChain()
-    driver.createNFT()
-    time.sleep(5)
-    driver.sellNFT()
-    driver.pastePriceNFT()
-    driver.clickListNFT()
-    driver.endUpListing()
+    for a in range(100000):
+        time.sleep(0.3)
+        driver.clickCreateButton()
+        driver.clickUploadImageButton()
+        driver.selectImage()
+        driver.pressEnter()
+        driver.clickNameButton()
+        driver.writeName()
+        driver.scrollDown(10)
+        driver.clickDescriptionButton()
+        driver.writeDescription()
+        driver.clickCollectionButton()
+        driver.clickSelectCollection()
+        driver.scrollDown(30)
+        driver.selectPolygonChain()
+        driver.createNFT()
+        time.sleep(5)
+        driver.sellNFT()
+        driver.pastePriceNFT()
+        driver.clickListNFT()
+        driver.endUpListing()
 
 
 
