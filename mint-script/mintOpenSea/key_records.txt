@@ -1,0 +1,108 @@
+
+
+RECORD NUMBER 0
+
+
+Pos x: 911, Pos y: 601 
+
+
+RECORD NUMBER 1
+
+
+Pos x: 911, Pos y: 601 
+
+
+RECORD NUMBER 2
+
+
+Pos x: 1280, Pos y: 640 
+
+
+RECORD NUMBER 3
+
+
+Pos x: 1280, Pos y: 640 
+
+
+RECORD NUMBER 4
+
+
+Pos x: 1280, Pos y: 640 
+
+
+RECORD NUMBER 5
+
+
+Pos x: 2865, Pos y: 742 
+
+
+RECORD NUMBER 6
+
+
+Pos x: 2865, Pos y: 742 
+
+
+RECORD NUMBER 7
+
+
+Pos x: 2865, Pos y: 742 
+
+
+RECORD NUMBER 8
+
+
+Pos x: 2915, Pos y: 898 
+
+
+RECORD NUMBER 9
+
+
+Pos x: 3063, Pos y: 724 
+
+
+RECORD NUMBER 10
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 11
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 12
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 13
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 14
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 15
+
+
+Pos x: 3089, Pos y: 860 
+
+
+RECORD NUMBER 16
+
+
+Pos x: 2115, Pos y: 730 
+
+
+RECORD NUMBER 17
+
+
+Pos x: 2120, Pos y: 726 

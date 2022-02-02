@@ -1,13 +1,18 @@
 from driverMoveMouse import DriverMoveMouse
 import time, keyboard
 
+from recorderMouse import RecorderMouse
+
 
 # Test case purposes
 if __name__ == "__main__":
 
     # Record mouse position
-    driver = DriverMoveMouse()
+    recorder = RecorderMouse()
+
+    
     driver.openFileRecord()
+
 
     while True:
         time.sleep(0.03)

@@ -4,21 +4,10 @@ class DriverMoveMouse():
 
     def __init__(self):
         self.counter = 842
-        self.record_number = 0
-        self.collection_name = "Bichotita bunny"
-        self.collection_description = "Bichotita bunny is someone very special She has a strong personality and loves to dress up when she goes to parties Nobody suspects that she is an international spy who persecutes those who dress poorly"
         pyautogui.PAUSE = 0.8
 
     def move(self,x,y):
         pyautogui.moveTo(x,y)
-
-    # Helps to record the positionc
-    def printPosition(self):
-        (x,y) = pyautogui.position()
-        print('Pos x: {xcord}, Pos y: {ycord} '.format(xcord=x,ycord=y))
-
-    def openFileInfoNFT(self):
-        self.file_nft = open("nft_info","w")
 
     def writeCounter(self):
         self.file_nft.write(self.counter)
@@ -27,30 +16,6 @@ class DriverMoveMouse():
         counter = self.file_nft.read()
         return counter
 
-
-
-
-
-
-    def openFileRecord(self):
-        self.file_record = open("keys_record.txt","w")
-
-    def writeFileRecord(self):
-        self.record_number = self.record_number + 1
-
-        # Write the numbers of records
-        self.file_record.write("\n\n")
-        self.file_record.write('RECORD NUMBER {n}\n'.format(n = self.record_number))
-
-        # Write the position
-        (x,y) = pyautogui.position()
-        s = 'Pos x: {xcord}, Pos y: {ycord} \n'.format(xcord=x,ycord=y)
-        self.file_record.write(s)
-        self.file_record.write("\n\n")
-
-
-    def closeFileRecord(self):
-        self.file_record.close()
 
 
     def clickCertainPosition(self, x, y):
