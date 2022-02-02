@@ -1,7 +1,9 @@
 
+# Read and 
 class FileHandler():
 
-
+    def __init__(self, file_name):
+        self.file_name = file_name
 
     def openFileRead(self, file_name):
         self.file = open(file_name,'r')
@@ -17,6 +19,10 @@ class FileHandler():
 
     def closeFile(self):
         self.file.close()
+
+    def readFile(self):
+        f_open = open()
+
 
 
 
